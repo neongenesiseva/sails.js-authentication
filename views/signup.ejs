@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--STYLES-->
+        <link rel="stylesheet" href="/styles/foundation.min.css">
+        <link rel="stylesheet" href="/styles/importer.css">
+        <!--STYLES END-->
+    </head>
+    
+    <body ng-app="signupMod" ng-controller="signupCtrl">
+        <div class="large-3 large-centered columns">
+            <div class="signup-box">
+                <div class='row'>
+                    <div class="large-12 columns">
+                        <h2 class="text-center">UserAuth</h2>
+                        <p>fill in and sign up</p>
+                        <form ng-submit="runSignup()">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <input type="text" name="name" placeholder="Name" ng-model="name" ng-maxlength="40" required>
+                                </div>
+                                <div class="large-12 columns">
+                                    <input type="email" name="email" placeholder="Email" ng-model="email" required>
+                                </div>
+                                <div class="large-12 columns">
+                                    <input type="password" name="password" placeholder="password" ng-model="password" ng-maxlength="20" required>
+                                </div>
+                                <div class="large-12 columns">
+                                    <input type="password" name="password2" placeholder="confirm password" ng-model="password2" ng-maxlength="20" required>
+                                </div>
+                                <div class="large-5 columns">
+                                    <input type="submit" value="create account">
+                                </div>
+                                <div class="large-5 columns">
+                                    <a class="button expand">Log In</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+        </div>
+    
+    
+    
+    
+    
+<!--SCRIPTS-->
+<script src="/js/dependencies/sails.io.js"></script>
+<script src="/js/dependencies/jquery.js"></script>
+<script src="/js/dependencies/angular.js"></script>
+<script src="/js/dependencies/foundation.min.js"></script>
+<script src="/js/public/signup/signupMod.js"></script>
+<script src="/js/public/signup/signupCtrl.js"></script>
+<script src="/js/public/login/loginCtrl.js"></script>
+<!--SCRIPTS END-->
+    
+    </body>
+</html>
